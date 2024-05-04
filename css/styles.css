@@ -199,6 +199,102 @@ textarea:hover, textarea:focus {
 
 
 
+/* EVENT PAGE */
+
+.event-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8%;
+}
+ 
+
+.event-intro-text {
+     display: flex;
+     text-align: center;
+}
+ 
+.event-logo-box {
+     display: flex;
+     flex-direction: column;
+     padding-bottom: 30px;
+     align-content: space-between;
+}
+ 
+.event-logo {
+     width: 40%;
+     align-self: center;
+ 
+}
+ 
+.content-area-break {
+     margin: 8%;
+     padding: 2px;
+     background-color: #F7911D;
+}
+ 
+
+.events-box {
+     margin: 8%;
+}
+ 
+.events-box p {
+     text-align: left;
+}
+ 
+.text-box {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     align-items: center;
+}
+ 
+
+.three {
+     padding-bottom: 30px;
+}
+ 
+.events-button {
+     margin: 8%;
+     display: flex;
+     justify-content: center;
+     align-content: center;
+}
+
+
+
+/* ABOUT SECTION */
+
+.about-main {
+    display: grid;
+    grid-template-areas:
+    "a"
+    "b"
+    "c"
+    "d";
+    justify-items: center;
+    align-items: center;
+    margin: 5% 7.5%;
+    grid-gap: 2rem;
+}
+
+.about-main-about {
+    grid-area: a;
+}
+
+.about-main-E-board {
+    grid-area: b;
+}
+
+.about-main-E-board2 {
+    grid-area: c;
+}
+
+.about-main-E-board3 {
+    grid-area: d;
+}
+
+
 /* MEDIA QUERY */
 
 @media screen and (min-width: 768px) {
@@ -222,5 +318,43 @@ textarea:hover, textarea:focus {
     
     .contact-main {
         grid-template-columns: 1fr 1fr;
+    }
+
+    /* Events */
+
+    .event-intro {
+        flex-direction: row;
+    }
+
+    .event-intro-text {
+        font-size: 45px;
+    }
+
+    .event-logo-box {
+        padding: 0px;
+        padding-right: 20px;
+    }
+
+    .event-logo {
+        width: 60%;
+    }
+
+    .text-box {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .text {
+        order: 1;
+        width: 100%;
+        padding-right: 30px;
+    }
+
+    .events-box-imgs {
+        order: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80%
     }
 }
