@@ -269,9 +269,7 @@ textarea:hover, textarea:focus {
     display: grid;
     grid-template-areas:
     "a"
-    "b"
-    "c"
-    "d";
+    "b";
     justify-items: center;
     align-items: center;
     margin: 5% 7.5%;
@@ -286,13 +284,13 @@ textarea:hover, textarea:focus {
     grid-area: b;
 }
 
-.about-main-E-board2 {
-    grid-area: c;
+.tbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.about-main-E-board3 {
-    grid-area: d;
-}
 
 
 /* MEDIA QUERY */
@@ -357,4 +355,7 @@ textarea:hover, textarea:focus {
         justify-content: center;
         width: 80%
     }
+
+     /* About*/
+
 }
